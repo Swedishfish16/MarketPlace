@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:latest     # which image to use from Docker Hub
+    container_name: postgres  # just a name for the container
+    environment:              # config variables the image expects
+      POSTGRES_USER: kevin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: marketplace
+    ports:
+      - "5432:5432"           # host port : container port

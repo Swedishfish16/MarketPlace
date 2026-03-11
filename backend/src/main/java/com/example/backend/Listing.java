@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 
 /**
  * This class will be responsible for the marketplace listing
- * It's an entity, meaning it will be stored in the database
+ * It's an entity, meaning it will be stored in the database, not considered one of the layers
  */
 
 @Entity
