@@ -27,4 +27,8 @@ public class ListingService {
     public List<Listing> getAllListings(){
         return listingRepository.findAll();
     }
+
+    public Listing createListing(Listing listing){
+        return listingRepository.save(listing);
+    }
 }
