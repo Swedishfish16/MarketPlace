@@ -14,7 +14,7 @@ import jakarta.persistence.Id;
 public class Listing {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     private String title;
     private String description;
     private Double price;
@@ -31,5 +31,48 @@ public class Listing {
         this.status = status;
     }
 
+    public Long getId(){
+        return this.id;
+    }
+
+    public String getTitle(){
+        return this.title;
+    }
+
+    public String getDescription(){
+        return this.description;
+    }
+
+    public Double getPrice(){
+        return this.price;
+    }
+
+    public String getCategory(){
+        return this.category;
+    }
+
+    public String getStatus(){
+        return this.status;
+    }
+
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public void setDescription(String description){
+        this.description = description;
+    }
+
+    public void setPrice(Double price){
+        this.price = price;
+    }
+
+    public void setCategory(String category){
+        this.category = category;
+    }
+
+    public void setStatus(String status){
+        this.status = status;
+    }
 
 }

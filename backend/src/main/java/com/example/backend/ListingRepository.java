@@ -1,5 +1,7 @@
 package com.example.backend;
 
-public class ListingRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ListingRepository extends JpaRepository<Listing, Long> {
     
 }
